@@ -6,7 +6,7 @@ export const Home = () => {
     return <>
         <Container fluid>
             <Row className='text-center mt-5'>
-                <Col className='display-2'>Hello there! I'm Michael Doherty.</Col>
+                <Col className='display-2'>Hello there! I'm <span className='blue-text'>Michael Doherty.</span></Col>
             </Row>
             <Row className='text-center mt-3'>
                 <Col className='fs-5'>
