@@ -15,6 +15,7 @@ code {
 * {
   background: #0B0C10;
   color: #C5C6C7;
+  font-family: 'TextaRegular';
 }
 
 .blue-text {
@@ -29,3 +30,19 @@ Color Palette:
 #66FCF1
 #45A29E
 */
+
+@font-face {
+  font-family: 'TextaHeavy';
+  src: local('TextaHeavy'), url('./fonts/Texta/TextaHeavy.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'TextaRegular';
+  src: local('TextaRegular'), url('./fonts/Texta/TextaRegular.ttf') format('truetype');
+  font-weight: bold;
+}
+
+.header {
+  font-family: 'TextaHeavy';
+}

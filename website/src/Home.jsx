@@ -9,9 +9,9 @@ export const Home = () => {
             <Row className='align-items-center text-center mt-5'>
                 <Col xs={8} xxl={6} className='display-2'>
                     <Row>
-                        <Col>
+                        <Col className='header'>
                             Hello there! <br />
-                            I'm <span className='blue-text'>Michael Doherty.</span>
+                            I'm <span className='header blue-text'>Michael Doherty.</span>
                         </Col>
                     </Row>
                     <Row className='text-center mt-3'>
