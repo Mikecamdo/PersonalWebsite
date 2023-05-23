@@ -7,11 +7,11 @@ export const About = () => {
     return <>
         <Container fluid>
             <Row className='display-6 text-center mt-5'>
-                <Col>
+                <Col className='header'>
                     About Me
                 </Col>
             </Row>
-            <Row className='text-center'>
+            <Row className='text-center fs-3'>
                 <Col>
                 Born and raised in the Jackson, Mississippi area, I've enjoyed working with technology my whole life.
                 Since coming to college, I've discovered a passion for creating innovative solutions to problems through software.
