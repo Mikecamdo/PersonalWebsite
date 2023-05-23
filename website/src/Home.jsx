@@ -1,13 +1,12 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
 
 export const Home = () => {
     return <>
         <Container fluid>
             <Row className='align-items-center text-center mt-5'>
-                <Col xs={8} xxl={6} className='display-2'>
+                <Col className='display-2'>
                     <Row>
                         <Col className='header'>
                             Hello there! <br />
@@ -19,9 +18,6 @@ export const Home = () => {
                             I'm a student studying computer science at Southern Methodist University in Dallas, Texas.
                         </Col>
                     </Row>
-                </Col>
-                <Col xs={4} xxl={6}>
-                    <Image fluid src='ProfessionalHeadshot.png'></Image>
                 </Col>
             </Row>
 
