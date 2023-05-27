@@ -47,8 +47,16 @@ Color Palette:
   font-family: 'TextaHeavy';
 }
 
+.greeting {
+  font-size: 130%;
+}
+
 .card-dimension {
   margin-left: 10%;
   margin-right: 10%;
   background-color: #0B0C10 !important;
+}
+
+.full-screen {
+  height: 100vh;
 }
