@@ -1,10 +1,16 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import './particles.css';
 
 export const Home = () => {
     return <>
         <Container className='full-screen d-flex align-items-center'>
+            <div id='particles-container'>
+                <div class="particles1"></div>
+                <div class="particles2"></div>
+            </div>
+
             <Row className='align-items-center text-center mx-auto'>
                 <Col>
                     <Row className='display-1'>
