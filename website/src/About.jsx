@@ -7,17 +7,17 @@ export const About = () => {
     return <>
         <Container fluid>
             <Row className='text-center'>
-                <Col>
+                <Col xs={{ order: "last" }} lg={{ order: "first" }}>
                     <Image fluid src='ProfessionalHeadshot.png'></Image>
                 </Col>
 
-                <Col>
+                <Col xs={12} lg={6} className='my-auto'>
+                    <Row className='display-6 text-center mt-5'>
+                        <Col className='header'>
+                            About Me
+                        </Col>
+                    </Row>
                     <Row className='text-center fs-3'>
-                        <Row className='display-6 text-center mt-5'>
-                            <Col className='header'>
-                                About Me
-                            </Col>
-                        </Row>
                         <Col>
                             Born and raised in the Jackson, Mississippi area, I've enjoyed working with technology my whole life.
                             Since coming to college, I've discovered a passion for creating innovative solutions to problems through software.
