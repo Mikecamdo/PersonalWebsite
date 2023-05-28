@@ -27,8 +27,8 @@
   }
   
   .particles1 {
-    width: 1px;
-    height: 1px;
+    width: 2px;
+    height: 2px;
     background: transparent;
     animation: particleAnimation1 30s linear infinite;
     box-shadow: 779px 1331px #fff, 324px 42px #fff, 303px 586px #fff,
@@ -211,8 +211,8 @@
   }
   
   .particles2 {
-    width: 1px;
-    height: 1px;
+    width: 2px;
+    height: 2px;
     background: transparent;
     animation: particleAnimation2 30s linear infinite;
     box-shadow: 779px 1331px #fff, 324px 42px #fff, 303px 586px #fff,
