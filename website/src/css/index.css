@@ -88,3 +88,11 @@ hr {
 .full-screen {
   height: 100vh;
 }
+
+.card {
+  transition: all 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
