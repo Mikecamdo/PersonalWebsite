@@ -7,21 +7,21 @@ import CardGroup from 'react-bootstrap/CardGroup';
 export const Experience = () => {
     return <>
         <Container fluid>
-            <Row className='display-6 text-center my-5'>
+            <Row className='display-6 text-center mt-5'>
                 <Col>
                     <span className='header hr2'>Experience</span>
                 </Col>
             </Row>
             <Row>
-                <Col>
-                    <Card className='card-dimension' border='light'>
+                <Col xs={12} xl={6} className='mt-5'>
+                    <Card className='card-dimension h-100' border='light'>
                         <Card.Img src='/Ethos Group.png' className='card-image'/>
                         <Card.Header className='fs-2 pb-0 header'>
                             Software Engineering Internship
                         </Card.Header>
-                        <Card.Body className='pt-0'>
+                        <Card.Body className='pt-0 fs-4'>
                             <Card.Title>
-                                <i>Ethos Group</i>
+                                <i className='fs-4'>Ethos Group</i>
                             </Card.Title>
                             <Card.Text className='align-items-center'>
                                 June 2023 - August 2023 | Remote
@@ -32,18 +32,16 @@ export const Experience = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-            </Row>
-            <br/>
-            <Row>
-                <Col>
-                    <Card className='card-dimension' border='light'>
+
+                <Col xs={12} xl={6} className='mt-5'>
+                    <Card className='card-dimension h-100' border='light'>
                         <Card.Img src='/SMU.png' className='card-image'/>
                         <Card.Header className='fs-2 pb-0 header'>
                             Grader
                         </Card.Header>
-                        <Card.Body className='pt-0'>
+                        <Card.Body className='pt-0 fs-4'>
                             <Card.Title>
-                                <i>Southern Methodist University</i>
+                                <i className='fs-4'>Southern Methodist University</i>
                             </Card.Title>
                             <Card.Text className='align-items-center'>
                                 January 2022 - December 2022 | Dallas, TX
@@ -54,7 +52,7 @@ export const Experience = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-            </Row>        
+            </Row>
         </Container>
     </>
 }
