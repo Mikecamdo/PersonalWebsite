@@ -7,9 +7,9 @@ import CardGroup from 'react-bootstrap/CardGroup';
 export const Experience = () => {
     return <>
         <Container fluid>
-            <Row className='display-6 text-center mt-5'>
-                <Col className='header'>
-                    Experience
+            <Row className='display-6 text-center my-5'>
+                <Col>
+                    <span className='header hr2'>Experience</span>
                 </Col>
             </Row>
             <Row>

@@ -9,7 +9,6 @@ import { Contact } from './Contact';
 export const App = () => {
     return <>
         <Home/>
-        <br/>
         <About/>
         <br/>
         <Experience/>

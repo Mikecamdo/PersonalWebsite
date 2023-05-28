@@ -20,8 +20,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: transparent;
     overflow: hidden;
   }
@@ -207,7 +207,7 @@
     100px 1026px #fff, 1803px 352px #fff, 865px 306px #fff, 1077px 1019px #fff,
     1335px 872px #fff, 1647px 1298px #fff, 1233px 1387px #fff, 698px 1036px #fff,
     659px 1860px #fff, 388px 1412px #fff, 1212px 458px #fff, 755px 1468px #fff,
-    696px 1654px #fff, 1144px 60px #fff;;
+    696px 1654px #fff, 1144px 60px #fff;
   }
   
   .particles2 {
@@ -391,6 +391,6 @@
     100px 1026px #fff, 1803px 352px #fff, 865px 306px #fff, 1077px 1019px #fff,
     1335px 872px #fff, 1647px 1298px #fff, 1233px 1387px #fff, 698px 1036px #fff,
     659px 1860px #fff, 388px 1412px #fff, 1212px 458px #fff, 755px 1468px #fff,
-    696px 1654px #fff, 1144px 60px #fff;;
+    696px 1654px #fff, 1144px 60px #fff;
   }
   

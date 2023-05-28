@@ -16,7 +16,7 @@ export const Home = () => {
                     <Row className='display-1'>
                         <Col className='header greeting'>
                             Hello there! <br />
-                            I'm <span className='header blue-text'>Michael Doherty.</span>
+                            I'm <span className='header gradient-text'>Michael Doherty.</span>
                         </Col>
                     </Row>
                     <Row className='text-center mt-3'>

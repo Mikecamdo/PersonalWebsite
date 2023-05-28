@@ -13,8 +13,8 @@ export const About = () => {
 
                 <Col xs={12} lg={6} className='my-auto'>
                     <Row className='display-6 text-center mt-5'>
-                        <Col className='header'>
-                            About Me
+                        <Col>
+                            <span className='header hr'>About Me</span>
                         </Col>
                     </Row>
                     <Row className='text-center fs-3'>
