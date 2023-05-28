@@ -91,8 +91,14 @@ hr {
 
 .card {
   transition: all 0.3s;
+  transform: scale(0.99);
 }
 
 .card:hover {
-  transform: scale(1.01);
+  transform: scale(1.0);
 }
+
+/* button:hover {
+  background-color: white;
+  color: red;
+} */
