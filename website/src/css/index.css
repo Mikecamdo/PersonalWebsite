@@ -61,24 +61,15 @@ hr {
   background-size: 100% 5px;  
 }
 
-/* 
-Color Palette:
-#0B0C10
-#1F2833
-#C5C6C7
-#66FCF1
-#45A29E
-*/
-
 @font-face {
   font-family: 'TextaHeavy';
-  src: local('TextaHeavy'), url('./fonts/Texta/TextaHeavy.ttf') format('truetype');
+  src: local('TextaHeavy'), url('../fonts/Texta/TextaHeavy.ttf') format('truetype');
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'TextaRegular';
-  src: local('TextaRegular'), url('./fonts/Texta/TextaRegular.ttf') format('truetype');
+  src: local('TextaRegular'), url('../fonts/Texta/TextaRegular.ttf') format('truetype');
   font-weight: bold;
 }
 
