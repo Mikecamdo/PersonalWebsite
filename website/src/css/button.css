@@ -1,7 +1,3 @@
-:root {
-    --cool: #66FCF1;
-}
-
 .draw-border {
     box-shadow: inset 0 0 0 4px #C5C6C7;
     color: #C5C6C7;
@@ -28,7 +24,7 @@
     border-right-width: 4px;
 }
 .draw-border:hover {
-    color: var(--cool);
+    color: #66FCF1;
 }
 .draw-border:hover::before, .draw-border:hover::after {
     border-color: #66FCF1;

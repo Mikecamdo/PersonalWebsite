@@ -12,6 +12,7 @@ export const Projects = () => {
                     <span className='header hr2'>Projects</span>
                 </Col>
             </Row>
+            
             <Row>
                 <Col xs={12} xl={6} className='mt-5'>
                     <Card className='card-dimension h-100' border='light'>
@@ -30,10 +31,20 @@ export const Projects = () => {
                                 </ul>
                                 <Row>
                                     <Col className='text-center mt-3' xs={12} sm={6}>
-                                        <button className='btn draw-border h-100'>View on GitHub</button>
+                                        <button className='btn draw-border h-100' 
+                                                onClick={() => {
+                                                    window.open('https://github.com/Mikecamdo/DoughBack');
+                                                }}>
+                                                    View on GitHub
+                                        </button>
                                     </Col>
                                     <Col className='text-center mt-3' xs={12} sm={6}>
-                                        <button className='btn draw-border h-100'>View Website</button>
+                                        <button className='btn draw-border h-100'
+                                                onClick={() => {
+                                                    window.open('https://doughback.vercel.app/');
+                                                }}>
+                                                    View Website
+                                        </button>
                                     </Col>
                                 </Row>
                             </Card.Text>
@@ -56,7 +67,12 @@ export const Projects = () => {
                                 </ul>
                                 <Row>
                                     <Col className='text-center mt-3'>
-                                        <button className='btn draw-border'>View on GitHub</button>
+                                        <button className='btn draw-border'
+                                                onClick={() => {
+                                                    window.open('https://github.com/Mikecamdo/SearchEngine');
+                                                }}>
+                                                    View on GitHub
+                                        </button>
                                     </Col>
                                 </Row>
                             </Card.Text>
@@ -81,7 +97,12 @@ export const Projects = () => {
                                 </ul>
                                 <Row>
                                     <Col className='text-center mt-3'>
-                                        <button className='btn draw-border'>View on GitHub</button>
+                                        <button className='btn draw-border'
+                                                onClick={() => {
+                                                    window.open('https://github.com/Mikecamdo/SudokuSolver');
+                                                }}>
+                                                    View on GitHub
+                                        </button>
                                     </Col>
                                 </Row>
                             </Card.Text>
@@ -104,7 +125,10 @@ export const Projects = () => {
                                 </ul>
                                 <Row>
                                     <Col className='text-center mt-3'>
-                                        <button className='btn draw-border'>View on GitHub</button>
+                                        <button className='btn draw-border'
+                                                onClick={() => {
+                                                    window.open('https://github.com/Mikecamdo/SentimentAnalyzer');
+                                                }}>View on GitHub</button>
                                     </Col>
                                 </Row>
                             </Card.Text>
@@ -129,7 +153,12 @@ export const Projects = () => {
                                 </ul>
                                 <Row>
                                     <Col className='text-center mt-3'>
-                                        <button className='btn draw-border'>View on GitHub</button>
+                                        <button className='btn draw-border'
+                                                onClick={() => {
+                                                    window.open('https://github.com/Mikecamdo/WordSenseDisambiguation');
+                                                }}>
+                                                    View on GitHub
+                                        </button>
                                     </Col>
                                 </Row>
                             </Card.Text>
@@ -152,10 +181,20 @@ export const Projects = () => {
                                 </ul>
                                 <Row>
                                     <Col className='text-center mt-3' xs={12} sm={6}>
-                                        <button className='btn draw-border h-100'>View on GitHub</button>
+                                        <button className='btn draw-border h-100'
+                                                onClick={() => {
+                                                    window.open('https://github.com/Mikecamdo/CommunityDetection');
+                                                }}>
+                                                    View on GitHub
+                                        </button>
                                     </Col>
                                     <Col className='text-center mt-3' xs={12} sm={6}>
-                                        <button className='btn draw-border h-100'>View Article</button>
+                                        <button className='btn draw-border h-100'
+                                                onClick={() => {
+                                                    window.open('https://medium.com/smucs/community-detection-label-propagation-vs-girvan-newman-part-2-c2fb78726db9');
+                                                }}>
+                                                    View Article
+                                        </button>
                                     </Col>
                                 </Row>
                             </Card.Text>
@@ -163,7 +202,6 @@ export const Projects = () => {
                     </Card>
                 </Col>
             </Row>
-
         </Container>
     </>
 }
