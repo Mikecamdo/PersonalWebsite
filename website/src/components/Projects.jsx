@@ -29,11 +29,11 @@ export const Projects = () => {
                                     <li>Features include account creation, login/logout, and submitting/editing/approving/denying reimbursement requests</li>
                                 </ul>
                                 <Row>
-                                    <Col className='text-center'>
-                                        <button className='btn draw-border'>View on GitHub</button>
+                                    <Col className='text-center mt-3' xs={12} sm={6}>
+                                        <button className='btn draw-border h-100'>View on GitHub</button>
                                     </Col>
-                                    <Col className='text-center'>
-                                        <button className='btn draw-border'>View Website</button>
+                                    <Col className='text-center mt-3' xs={12} sm={6}>
+                                        <button className='btn draw-border h-100'>View Website</button>
                                     </Col>
                                 </Row>
                             </Card.Text>
@@ -55,7 +55,7 @@ export const Projects = () => {
                                     <li>Describe</li>
                                 </ul>
                                 <Row>
-                                    <Col className='text-center'>
+                                    <Col className='text-center mt-3'>
                                         <button className='btn draw-border'>View on GitHub</button>
                                     </Col>
                                 </Row>
@@ -80,7 +80,7 @@ export const Projects = () => {
                                     <li>Describe</li>
                                 </ul>
                                 <Row>
-                                    <Col className='text-center'>
+                                    <Col className='text-center mt-3'>
                                         <button className='btn draw-border'>View on GitHub</button>
                                     </Col>
                                 </Row>
@@ -103,7 +103,7 @@ export const Projects = () => {
                                     <li>Describe</li>
                                 </ul>
                                 <Row>
-                                    <Col className='text-center'>
+                                    <Col className='text-center mt-3'>
                                         <button className='btn draw-border'>View on GitHub</button>
                                     </Col>
                                 </Row>
@@ -128,7 +128,7 @@ export const Projects = () => {
                                     <li>Describe</li>
                                 </ul>
                                 <Row>
-                                    <Col className='text-center'>
+                                    <Col className='text-center mt-3'>
                                         <button className='btn draw-border'>View on GitHub</button>
                                     </Col>
                                 </Row>
@@ -151,11 +151,11 @@ export const Projects = () => {
                                     <li>Describe</li>
                                 </ul>
                                 <Row>
-                                    <Col className='text-center'>
-                                        <button className='btn draw-border'>View on GitHub</button>
+                                    <Col className='text-center mt-3' xs={12} sm={6}>
+                                        <button className='btn draw-border h-100'>View on GitHub</button>
                                     </Col>
-                                    <Col className='text-center'>
-                                        <button className='btn draw-border'>View Article</button>
+                                    <Col className='text-center mt-3' xs={12} sm={6}>
+                                        <button className='btn draw-border h-100'>View Article</button>
                                     </Col>
                                 </Row>
                             </Card.Text>
