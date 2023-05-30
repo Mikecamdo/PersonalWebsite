@@ -21,7 +21,7 @@ export const Projects = () => {
                         </Card.Header>
                         <Card.Body className='pt-0 fs-4'>
                             <Card.Title>
-                                <i className='fs-4'>React, React Bootstrap, Express.js, Node.js, MySQL</i>
+                                <i className='fs-4'>HTML/CSS, React, Bootstrap/React Bootstrap, Express.js, Node.js, MySQL</i>
                             </Card.Title>
                             <Card.Text className='align-items-center'>
                                 <ul>
@@ -155,7 +155,6 @@ export const Projects = () => {
                                 <ul>
                                     <li>A program that determines the correct word sense of the words "Rubbish", "Yarn", and "Tissue"</li>
                                     <li>Uses a dictionary/knowledge based method inspired by the Lesk algorithm</li>
-
                                 </ul>
                                 <Row>
                                     <Col className='text-center mt-3'>

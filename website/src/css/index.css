@@ -58,7 +58,7 @@ hr {
   left
   bottom
   no-repeat;
-  background-size: 100% 5px;  
+  background-size: 100% 5px;
 }
 
 @font-face {
@@ -98,7 +98,7 @@ hr {
   transform: scale(1.0);
 }
 
-/* button:hover {
-  background-color: white;
-  color: red;
-} */
+.form-sizing {
+  width: 100%;
+  max-width: 1000px;
+}
