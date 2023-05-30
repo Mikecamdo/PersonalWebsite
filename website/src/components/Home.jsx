@@ -21,7 +21,7 @@ export const Home = () => {
                     </Row>
                     <Row className='text-center mt-3'>
                         <Col className='fs-4'>
-                            I'm a student studying computer science at Southern Methodist University in Dallas, Texas.
+                            I'm a senior studying computer science at Southern Methodist University in Dallas, Texas.
                         </Col>
                     </Row>
                 </Col>

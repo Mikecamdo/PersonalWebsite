@@ -12,7 +12,7 @@ export const Projects = () => {
                     <span className='header hr2'>Projects</span>
                 </Col>
             </Row>
-            
+
             <Row>
                 <Col xs={12} xl={6} className='mt-5'>
                     <Card className='card-dimension h-100' border='light'>
@@ -21,7 +21,7 @@ export const Projects = () => {
                         </Card.Header>
                         <Card.Body className='pt-0 fs-4'>
                             <Card.Title>
-                                <i className='fs-4'>React, React Bootstrap, Node.js</i>
+                                <i className='fs-4'>React, React Bootstrap, Express.js, Node.js, MySQL</i>
                             </Card.Title>
                             <Card.Text className='align-items-center'>
                                 <ul>
@@ -59,11 +59,13 @@ export const Projects = () => {
                         </Card.Header>
                         <Card.Body className='pt-0 fs-4'>
                             <Card.Title>
-                                <i className='fs-4'>C++</i>
+                                <i className='fs-4'>C++, RapidJSON</i>
                             </Card.Title>
                             <Card.Text className='align-items-center'>
                                 <ul>
-                                    <li>Describe</li>
+                                    <li>A search engine that accepts simple Boolean queries (e.g., AND social network / OR snap facebook)</li>
+                                    <li>Parses 300,000 JSON files and returns the most relevant articles for a given search</li>
+                                    <li>Includes the implementation of a custom AVL tree and hash table</li>
                                 </ul>
                                 <Row>
                                     <Col className='text-center mt-3'>
@@ -93,7 +95,8 @@ export const Projects = () => {
                             </Card.Title>
                             <Card.Text className='align-items-center'>
                                 <ul>
-                                    <li>Describe</li>
+                                    <li>A program that can solve any valid Sudoku puzzle using a backtracking algorithm</li>
+                                    <li>Allows user to enter their own Sudoku puzzle; user can also play Sudoku using the provided Easy/Medium/Hard Sudoku puzzles</li>
                                 </ul>
                                 <Row>
                                     <Col className='text-center mt-3'>
@@ -121,7 +124,8 @@ export const Projects = () => {
                             </Card.Title>
                             <Card.Text className='align-items-center'>
                                 <ul>
-                                    <li>Describe</li>
+                                    <li>A program that determines the sentiment (positive or negative) of a Tweet</li>
+                                    <li>Analyzes the frequency of words in Tweets tagged positive and negative to determine relevant terms for each type of Tweet</li>
                                 </ul>
                                 <Row>
                                     <Col className='text-center mt-3'>
@@ -149,7 +153,9 @@ export const Projects = () => {
                             </Card.Title>
                             <Card.Text className='align-items-center'>
                                 <ul>
-                                    <li>Describe</li>
+                                    <li>A program that determines the correct word sense of the words "Rubbish", "Yarn", and "Tissue"</li>
+                                    <li>Uses a dictionary/knowledge based method inspired by the Lesk algorithm</li>
+
                                 </ul>
                                 <Row>
                                     <Col className='text-center mt-3'>
@@ -177,7 +183,8 @@ export const Projects = () => {
                             </Card.Title>
                             <Card.Text className='align-items-center'>
                                 <ul>
-                                    <li>Describe</li>
+                                    <li>Implementation of the Girvan-Newman and Label Propagation community detection algorithms</li>
+                                    <li>Provided statistical analysis and compared/contrasted the two algorithms</li>
                                 </ul>
                                 <Row>
                                     <Col className='text-center mt-3' xs={12} sm={6}>
