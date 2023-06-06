@@ -11,6 +11,12 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 export const App = () => {
+    const homeRef = useRef(0);
+    const aboutRef = useRef(0);
+    const experienceRef = useRef(0);
+    const projectsRef = useRef(0);
+    const contactRef = useRef(0);
+
     const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
 
     const handleResize = () => {
@@ -25,30 +31,43 @@ export const App = () => {
         };
     }, []);
 
+    const scrollTo = (location) => {
+        if (location == 1) {
+            window.scrollTo({top: 0, behavior: "smooth" });
+        } else if (location == 2) {
+            window.scrollTo({top: (aboutRef.current.offsetTop - homeRef.current.offsetTop), behavior: "smooth" });
+        } else if (location == 3) {
+            window.scrollTo({top: (experienceRef.current.offsetTop  - homeRef.current.offsetTop), behavior: "smooth" });
+        } else if (location == 4) {
+            window.scrollTo({top: (projectsRef.current.offsetTop  - homeRef.current.offsetTop), behavior: "smooth" });
+        } else if (location == 5) {
+            window.scrollTo({top: (contactRef.current.offsetTop  - homeRef.current.offsetTop), behavior: "smooth" });
+        }
+    }
+
     return <>
-        <Navbar sticky='top' expand='xxl' variant='dark'>
+        <Navbar sticky='top' expand='xxl' variant='dark' collapseOnSelect>
             <Container className={`${viewportWidth <= 1399 && 'me-0'}`}>
                 <Navbar.Toggle className='no-border ms-auto' />
                 <Navbar.Collapse className='fs-3'>
                     <Nav className='flex-grow-1 justify-content-evenly'>
-                        <Nav.Link className='mx-5'><span className='text-center'>Home</span></Nav.Link>
-                        <Nav.Link className='mx-5'><span>About</span></Nav.Link>
-                        <Nav.Link className='mx-5'><span>Experience</span></Nav.Link>
-                        <Nav.Link className='mx-5'><span>Projects</span></Nav.Link>
-                        <Nav.Link className='mx-5'><span>Contact</span></Nav.Link>
-                        <Nav.Link className='mx-5'><span>Resume</span></Nav.Link>
+                        <Nav.Link eventKey='1' className='mx-5' onClick={() => { scrollTo(1)}}><span>Home</span></Nav.Link>
+                        <Nav.Link eventKey='2' className='mx-5' onClick={() => { scrollTo(2)}}><span>About</span></Nav.Link>
+                        <Nav.Link eventKey='3' className='mx-5' onClick={() => { scrollTo(3)}}><span>Experience</span></Nav.Link>
+                        <Nav.Link eventKey='4' className='mx-5' onClick={() => { scrollTo(4)}}><span>Projects</span></Nav.Link>
+                        <Nav.Link eventKey='5' className='mx-5' onClick={() => { scrollTo(5)}}><span>Contact</span></Nav.Link>
+                        <Nav.Link eventKey='6' className='mx-5'><span>Resume</span></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-
-        <Home />
-        <About />
+        <span ref={homeRef}><Home /></span>
+        <span ref={aboutRef}><About /></span>
         <br />
-        <Experience />
+        <span ref={experienceRef}><Experience /></span>
         <br />
-        <Projects />
+        <span ref={projectsRef}><Projects /></span>
         <br />
-        <Contact />
+        <span ref={contactRef}><Contact /></span>
     </>
 }
