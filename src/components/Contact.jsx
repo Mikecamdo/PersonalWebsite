@@ -25,7 +25,7 @@ export const Contact = () => {
     }, [values])
 
     return <>
-        <Container fluid>
+        <Container fluid className='mb-5'>
             <Row className='display-6 text-center my-4'>
                 <Col className='header'>
                     <span className='header hr2'>Contact Me</span>
