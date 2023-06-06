@@ -18,15 +18,28 @@ export const App = () => {
     const contactRef = useRef(0);
 
     const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+    const [makeTransparent, setMakeTransparent] = useState(true);
+
+    const handleScroll = () => {
+        const position = window.pageYOffset;
+
+        if (position === 0) {
+            setMakeTransparent(true);
+        } else {
+            setMakeTransparent(false);
+        }
+    }
 
     const handleResize = () => {
         setViewportWidth(window.innerWidth);
     }
 
     useEffect(() => {
+        window.addEventListener('scroll', handleScroll, { passive: true });
         window.addEventListener('resize', handleResize);
 
         return () => {
+            window.removeEventListener("scroll", handleScroll);
             window.removeEventListener('resize', handleResize);
         };
     }, []);
@@ -46,17 +59,17 @@ export const App = () => {
     }
 
     return <>
-        <Navbar sticky='top' expand='xxl' variant='dark' collapseOnSelect>
-            <Container className={`${viewportWidth <= 1399 && 'me-0'}`}>
-                <Navbar.Toggle className='no-border ms-auto' />
-                <Navbar.Collapse className='fs-3'>
-                    <Nav className='flex-grow-1 justify-content-evenly'>
-                        <Nav.Link eventKey='1' className='mx-5' onClick={() => { scrollTo(1)}}><span>Home</span></Nav.Link>
-                        <Nav.Link eventKey='2' className='mx-5' onClick={() => { scrollTo(2)}}><span>About</span></Nav.Link>
-                        <Nav.Link eventKey='3' className='mx-5' onClick={() => { scrollTo(3)}}><span>Experience</span></Nav.Link>
-                        <Nav.Link eventKey='4' className='mx-5' onClick={() => { scrollTo(4)}}><span>Projects</span></Nav.Link>
-                        <Nav.Link eventKey='5' className='mx-5' onClick={() => { scrollTo(5)}}><span>Contact</span></Nav.Link>
-                        <Nav.Link eventKey='6' className='mx-5'><span>Resume</span></Nav.Link>
+        <Navbar className={`${makeTransparent ? 'transparent' : 'notTransparent'}`} sticky='top' expand='xxl' variant='dark' collapseOnSelect>
+            <Container className={`transparent ${viewportWidth <= 1399 && 'me-0'}`}>
+                <Navbar.Toggle className='transparent no-border ms-auto' />
+                <Navbar.Collapse className='transparent fs-3'>
+                    <Nav className='transparent flex-grow-1 justify-content-evenly'>
+                        <Nav.Link eventKey='1' className='mx-5 transparent' onClick={() => { scrollTo(1)}}><span>Home</span></Nav.Link>
+                        <Nav.Link eventKey='2' className='mx-5 transparent' onClick={() => { scrollTo(2)}}><span>About</span></Nav.Link>
+                        <Nav.Link eventKey='3' className='mx-5 transparent' onClick={() => { scrollTo(3)}}><span>Experience</span></Nav.Link>
+                        <Nav.Link eventKey='4' className='mx-5 transparent' onClick={() => { scrollTo(4)}}><span>Projects</span></Nav.Link>
+                        <Nav.Link eventKey='5' className='mx-5 transparent' onClick={() => { scrollTo(5)}}><span>Contact</span></Nav.Link>
+                        <Nav.Link eventKey='6' className='mx-5 transparent'><span>Resume</span></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

@@ -107,3 +107,12 @@ hr {
   border: none !important;
   box-shadow: none !important;
 }
+
+.transparent {
+  background: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.notTransparent {
+  transition: background-color 0.3s ease-in-out;
+}
