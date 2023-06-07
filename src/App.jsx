@@ -62,7 +62,7 @@ export const App = () => {
     return <>
         <Navbar className={`${(makeTransparent && !navClicked) ? 'transparent' : 'notTransparent'}`} fixed='top' expand='xxl' variant='dark' collapseOnSelect>
             <Container className={`transparent ${viewportWidth <= 1399 && 'me-0'}`}>
-                <Navbar.Toggle className='transparent no-border ms-auto' onClick={() => {setNavClicked(!navClicked)}}/>
+                <Navbar.Toggle className='transparent no-border ms-auto fs-2' onClick={() => {setNavClicked(!navClicked)}}/>
                 <Navbar.Collapse className='transparent fs-3'>
                     <Nav className='transparent flex-grow-1 justify-content-evenly'>
                         <Nav.Link eventKey='1' className='mx-5 transparent' onClick={() => { scrollTo(1)}}><span>Home</span></Nav.Link>
