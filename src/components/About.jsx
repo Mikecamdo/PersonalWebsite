@@ -43,7 +43,7 @@ export const About = () => {
                             <span className='header hr'>About Me</span>
                         </Col>
                     </Row>
-                    <Row className='text-center fs-3'>
+                    <Row className='text-center fs-4'>
                         <Col>
                             Born and raised in the Jackson, Mississippi area, I've enjoyed working with technology my whole life.
                             Since coming to college, I've discovered a passion for creating innovative solutions to problems through software.

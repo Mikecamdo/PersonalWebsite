@@ -21,14 +21,14 @@ export const Home = () => {
 
             <Row className='align-items-center text-center mx-auto'>
                 <Col>
-                    <Row className='display-1'>
-                        <Col className='header greeting'>
-                            <div className={`${loadText1 ? 'notHidden' : 'hidden'}`}>Hello there!</div>
-                            <div className={`delay-1 ${loadText1 ? 'notHidden' : 'hidden'}`}>I'm <span className='header gradient-text'>Michael Doherty.</span></div>
+                    <Row>
+                        <Col className='header greeting display-1'>
+                            <div className={`transparent2  ${loadText1 ? 'notHidden' : 'hidden'}`}>Hello there!</div>
+                            <div className={`transparent2 delay-1  ${loadText1 ? 'notHidden' : 'hidden'}`}>I'm <span className='header gradient-text'>Michael Doherty.</span></div>
                         </Col>
                     </Row>
                     <Row className='text-center mt-3'>
-                        <Col className={`fs-4 delay-2 ${loadText1 ? 'notHidden' : 'hidden'}`}>
+                        <Col className={`transparent2 fs-5 delay-2 p-0 ${loadText1 ? 'notHidden' : 'hidden'}`}>
                             I'm a senior studying computer science at Southern Methodist University in Dallas, Texas.
                         </Col>
                     </Row>

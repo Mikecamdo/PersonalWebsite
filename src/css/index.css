@@ -120,3 +120,8 @@ hr {
 .noOverflow {
   overflow-x: hidden;
 }
+
+.transparent2 {
+  background: transparent;
+  z-index: 5;
+}
