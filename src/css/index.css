@@ -116,3 +116,7 @@ hr {
 .notTransparent {
   transition: background-color 0.3s ease-in-out;
 }
+
+.noOverflow {
+  overflow-x: hidden;
+}
