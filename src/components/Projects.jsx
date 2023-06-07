@@ -66,14 +66,14 @@ export const Projects = () => {
             </Row>
 
             <Row>
-                <Col ref={projRef1} xs={12} xl={6} className={`${loadProj1 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-1'}`}>
+                <Col ref={projRef1} xs={12} lg={6} className={`${loadProj1 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-1'}`}>
                     <Card className='card-dimension h-100' border='light'>
-                        <Card.Header className='fs-2 pb-0 header'>
+                        <Card.Header className='fs-3 pb-0 header'>
                             DoughBack
                         </Card.Header>
-                        <Card.Body className='pt-0 fs-4'>
+                        <Card.Body className='pt-0 fs-5'>
                             <Card.Title>
-                                <i className='fs-4'>HTML/CSS, React, Bootstrap/React Bootstrap, Express.js, Node.js, MySQL</i>
+                                <i className='fs-5'>HTML/CSS, React, Bootstrap/React Bootstrap, Express.js, Node.js, MySQL</i>
                             </Card.Title>
                             <Card.Text className='align-items-center'>
                                 <ul>
@@ -104,14 +104,14 @@ export const Projects = () => {
                     </Card>
                 </Col>
 
-                <Col ref={projRef2} xs={12} xl={6} className={`${loadProj2 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-2'}`}>
+                <Col ref={projRef2} xs={12} lg={6} className={`${loadProj2 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-2'}`}>
                     <Card className='card-dimension h-100' border='light'>
-                        <Card.Header className='fs-2 pb-0 header'>
+                        <Card.Header className='fs-3 pb-0 header'>
                             Search Engine
                         </Card.Header>
-                        <Card.Body className='pt-0 fs-4'>
+                        <Card.Body className='pt-0 fs-5'>
                             <Card.Title>
-                                <i className='fs-4'>C++, RapidJSON</i>
+                                <i className='fs-5'>C++, RapidJSON</i>
                             </Card.Title>
                             <Card.Text className='align-items-center'>
                                 <ul>
@@ -136,14 +136,14 @@ export const Projects = () => {
             </Row>
 
             <Row>
-                <Col ref={projRef3} xs={12} xl={6} className={`${loadProj3 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-1'}`}>
+                <Col ref={projRef3} xs={12} lg={6} className={`${loadProj3 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-1'}`}>
                     <Card className='card-dimension h-100' border='light'>
-                        <Card.Header className='fs-2 pb-0 header'>
+                        <Card.Header className='fs-3 pb-0 header'>
                             Sudoku Solver
                         </Card.Header>
-                        <Card.Body className='pt-0 fs-4'>
+                        <Card.Body className='pt-0 fs-5'>
                             <Card.Title>
-                                <i className='fs-4'>Python, PyGame</i>
+                                <i className='fs-5'>Python, PyGame</i>
                             </Card.Title>
                             <Card.Text className='align-items-center'>
                                 <ul>
@@ -165,14 +165,14 @@ export const Projects = () => {
                     </Card>
                 </Col>
 
-                <Col ref={projRef4} xs={12} xl={6} className={`${loadProj4 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-2'}`}>
+                <Col ref={projRef4} xs={12} lg={6} className={`${loadProj4 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-2'}`}>
                     <Card className='card-dimension h-100' border='light'>
-                        <Card.Header className='fs-2 pb-0 header'>
+                        <Card.Header className='fs-3 pb-0 header'>
                             Sentiment Analyzer
                         </Card.Header>
-                        <Card.Body className='pt-0 fs-4'>
+                        <Card.Body className='pt-0 fs-5'>
                             <Card.Title>
-                                <i className='fs-4'>C++</i>
+                                <i className='fs-5'>C++</i>
                             </Card.Title>
                             <Card.Text className='align-items-center'>
                                 <ul>
@@ -194,14 +194,14 @@ export const Projects = () => {
             </Row>
 
             <Row>
-                <Col ref={projRef5} xs={12} xl={6} className={`${loadProj5 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-1'}`}>
+                <Col ref={projRef5} xs={12} lg={6} className={`${loadProj5 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-1'}`}>
                     <Card className='card-dimension h-100' border='light'>
-                        <Card.Header className='fs-2 pb-0 header'>
+                        <Card.Header className='fs-3 pb-0 header'>
                             Word Sense Disambiguation
                         </Card.Header>
-                        <Card.Body className='pt-0 fs-4'>
+                        <Card.Body className='pt-0 fs-5'>
                             <Card.Title>
-                                <i className='fs-4'>Python, NLTK</i>
+                                <i className='fs-5'>Python, NLTK</i>
                             </Card.Title>
                             <Card.Text className='align-items-center'>
                                 <ul>
@@ -223,14 +223,14 @@ export const Projects = () => {
                     </Card>
                 </Col>
 
-                <Col ref={projRef6} xs={12} xl={6} className={`${loadProj6 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-2'}`}>
+                <Col ref={projRef6} xs={12} lg={6} className={`${loadProj6 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-2'}`}>
                     <Card className='card-dimension h-100' border='light'>
-                        <Card.Header className='fs-2 pb-0 header'>
+                        <Card.Header className='fs-3 pb-0 header'>
                             Community Detection
                         </Card.Header>
-                        <Card.Body className='pt-0 fs-4'>
+                        <Card.Body className='pt-0 fs-5'>
                             <Card.Title>
-                                <i className='fs-4'>C++, Python</i>
+                                <i className='fs-5'>C++, Python</i>
                             </Card.Title>
                             <Card.Text className='align-items-center'>
                                 <ul>

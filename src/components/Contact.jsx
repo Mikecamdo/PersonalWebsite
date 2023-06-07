@@ -63,7 +63,7 @@ export const Contact = () => {
                 </Col>
             </Row>
 
-            <Row ref={textRef} className={`${loadText ? 'notHidden' : 'hidden'} fs-3 text-center delay-1`}>
+            <Row ref={textRef} className={`${loadText ? 'notHidden' : 'hidden'} fs-4 text-center delay-1`}>
                 <Col>
                     I'm always interested in collaborating on a project or any job opportunities you may have. <br/>
                     You can email me at <span className='header'>mcdoherty@smu.edu</span> or submit the form below.
@@ -71,7 +71,7 @@ export const Contact = () => {
             </Row>
 
             {state.succeeded ?
-                <Row className='fs-3 text-center my-5'>
+                <Row className='fs-4 text-center my-5'>
                     <Col>
                         Thanks for reaching out! I'll get back to you shortly.
                     </Col>
@@ -81,7 +81,7 @@ export const Contact = () => {
                     <Col className='text-center'>
                         <Form onSubmit={handleSubmit} className='form-sizing mx-auto'>
                             <Form.Group>
-                                <Form.Control className='fs-4' 
+                                <Form.Control className='fs-5' 
                                               id='name' 
                                               type='name' 
                                               name='name' 
@@ -98,7 +98,7 @@ export const Contact = () => {
                             />
 
                             <Form.Group className='my-3'>
-                                <Form.Control className='fs-4' 
+                                <Form.Control className='fs-5' 
                                               id='email' 
                                               type='email' 
                                               name='email' 
@@ -115,7 +115,7 @@ export const Contact = () => {
                             />
 
                             <Form.Group className='my-3'>
-                                <Form.Control className='fs-4' 
+                                <Form.Control className='fs-5' 
                                               as='textarea' 
                                               rows={3} 
                                               id='message' 

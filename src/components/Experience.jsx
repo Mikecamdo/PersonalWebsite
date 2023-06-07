@@ -43,15 +43,15 @@ export const Experience = () => {
                 </Col>
             </Row>
             <Row>
-                <Col ref={jobRef1} xs={12} xl={6} className={`${loadJob1 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-1'}`}>
+                <Col ref={jobRef1} xs={12} lg={6} className={`${loadJob1 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-1'}`}>
                     <Card className='card-dimension h-100' border='light'>
                         <Card.Img src='./Ethos Group.png' className='card-image'/>
-                        <Card.Header className='fs-2 pb-0 header'>
+                        <Card.Header className='fs-3 pb-0 header'>
                             Software Engineering Internship
                         </Card.Header>
-                        <Card.Body className='pt-0 fs-4'>
+                        <Card.Body className='pt-0 fs-5'>
                             <Card.Title>
-                                <i className='fs-4'>Ethos Group</i>
+                                <i className='fs-5'>Ethos Group</i>
                             </Card.Title>
                             <Card.Text className='align-items-center'>
                                 June 2023 - August 2023 | Remote
@@ -63,15 +63,15 @@ export const Experience = () => {
                     </Card>
                 </Col>
 
-                <Col ref={jobRef2} xs={12} xl={6} className={`${loadJob2 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-2'}`}>
+                <Col ref={jobRef2} xs={12} lg={6} className={`${loadJob2 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-2'}`}>
                     <Card className='card-dimension h-100' border='light'>
                         <Card.Img src='./SMU.png' className='card-image'/>
-                        <Card.Header className='fs-2 pb-0 header'>
+                        <Card.Header className='fs-3 pb-0 header'>
                             Grader
                         </Card.Header>
-                        <Card.Body className='pt-0 fs-4'>
+                        <Card.Body className='pt-0 fs-5'>
                             <Card.Title>
-                                <i className='fs-4'>Southern Methodist University</i>
+                                <i className='fs-5'>Southern Methodist University</i>
                             </Card.Title>
                             <Card.Text className='align-items-center'>
                                 January 2022 - December 2022 | Dallas, TX
