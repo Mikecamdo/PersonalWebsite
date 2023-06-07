@@ -11,6 +11,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 export const App = () => {
+    const navbarRef = useRef(0);
     const homeRef = useRef(0);
     const aboutRef = useRef(0);
     const experienceRef = useRef(0);
@@ -20,6 +21,7 @@ export const App = () => {
     const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
     const [makeTransparent, setMakeTransparent] = useState(true);
     const [navClicked, setNavClicked] = useState(false);
+    const [navHeight, setNavHeight] = useState(0);
 
     const handleScroll = () => {
         const position = window.pageYOffset;
@@ -33,11 +35,14 @@ export const App = () => {
 
     const handleResize = () => {
         setViewportWidth(window.innerWidth);
+        setNavHeight(navbarRef.current.offsetHeight);
     }
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll, { passive: true });
         window.addEventListener('resize', handleResize);
+
+        setNavHeight(navbarRef.current.offsetHeight);
 
         return () => {
             window.removeEventListener("scroll", handleScroll);
@@ -46,21 +51,23 @@ export const App = () => {
     }, []);
 
     const scrollTo = (location) => {
+        console.log('BEFORE MOVING')
+        console.log(navHeight)
         if (location == 1) {
             window.scrollTo({top: 0, behavior: "smooth" });
         } else if (location == 2) {
-            window.scrollTo({top: (aboutRef.current.offsetTop - homeRef.current.offsetTop), behavior: "smooth" });
+            window.scrollTo({top: (aboutRef.current.offsetTop - navHeight), behavior: "smooth" });
         } else if (location == 3) {
-            window.scrollTo({top: (experienceRef.current.offsetTop  - homeRef.current.offsetTop), behavior: "smooth" });
+            window.scrollTo({top: (experienceRef.current.offsetTop - navHeight), behavior: "smooth" });
         } else if (location == 4) {
-            window.scrollTo({top: (projectsRef.current.offsetTop  - homeRef.current.offsetTop), behavior: "smooth" });
+            window.scrollTo({top: (projectsRef.current.offsetTop - navHeight), behavior: "smooth" });
         } else if (location == 5) {
-            window.scrollTo({top: (contactRef.current.offsetTop  - homeRef.current.offsetTop), behavior: "smooth" });
+            window.scrollTo({top: (contactRef.current.offsetTop - navHeight), behavior: "smooth" });
         }
     }
 
     return <>
-        <Navbar className={`${(makeTransparent && !navClicked) ? 'transparent' : 'notTransparent'}`} fixed='top' expand='xxl' variant='dark' collapseOnSelect>
+        <Navbar ref={navbarRef} className={`${(makeTransparent && !navClicked) ? 'transparent' : 'notTransparent'}`} fixed='top' expand='xxl' variant='dark' collapseOnSelect>
             <Container className={`transparent ${viewportWidth <= 1399 && 'me-0'}`}>
                 <Navbar.Toggle className='transparent no-border ms-auto fs-2' onClick={() => {setNavClicked(!navClicked)}}/>
                 <Navbar.Collapse className='transparent fs-3'>
