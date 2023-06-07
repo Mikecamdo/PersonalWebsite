@@ -35,7 +35,6 @@ export const Experience = () => {
         };
     }, []);
 
-
     return <>
         <Container fluid>
             <Row ref={titleRef} className={`${loadTitle ? 'notHidden' : 'hidden'} display-6 text-center mt-5`}>
