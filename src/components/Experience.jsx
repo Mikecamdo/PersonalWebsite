@@ -45,7 +45,7 @@ export const Experience = () => {
             <Row>
                 <Col ref={jobRef1} xs={12} xl={6} className={`${loadJob1 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-1'}`}>
                     <Card className='card-dimension h-100' border='light'>
-                        <Card.Img src='/Ethos Group.png' className='card-image'/>
+                        <Card.Img src='./Ethos Group.png' className='card-image'/>
                         <Card.Header className='fs-2 pb-0 header'>
                             Software Engineering Internship
                         </Card.Header>
@@ -65,7 +65,7 @@ export const Experience = () => {
 
                 <Col ref={jobRef2} xs={12} xl={6} className={`${loadJob2 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-2'}`}>
                     <Card className='card-dimension h-100' border='light'>
-                        <Card.Img src='/SMU.png' className='card-image'/>
+                        <Card.Img src='./SMU.png' className='card-image'/>
                         <Card.Header className='fs-2 pb-0 header'>
                             Grader
                         </Card.Header>
