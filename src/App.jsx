@@ -5,10 +5,10 @@ import { About } from './components/About';
 import { Experience } from './components/Experience';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
-
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Resume from './resume.pdf';
 
 export const App = () => {
     const navbarRef = useRef(0);
@@ -75,7 +75,7 @@ export const App = () => {
                         <Nav.Link eventKey='3' className='mx-0 transparent' onClick={() => {setNavClicked(!navClicked); scrollTo(3)}}><span>Experience</span></Nav.Link>
                         <Nav.Link eventKey='4' className='mx-0 transparent' onClick={() => {setNavClicked(!navClicked); scrollTo(4)}}><span>Projects</span></Nav.Link>
                         <Nav.Link eventKey='5' className='mx-0 transparent' onClick={() => {setNavClicked(!navClicked); scrollTo(5)}}><span>Contact</span></Nav.Link>
-                        <Nav.Link eventKey='6' className='mx-0 transparent' onClick={() => {setNavClicked(!navClicked); }}><span>Resume</span></Nav.Link>
+                        <Nav.Link eventKey='6' className='mx-0 transparent' onClick={() => {setNavClicked(!navClicked); window.open(Resume)}}><span>Resume</span></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
