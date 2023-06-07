@@ -1,18 +1,50 @@
+import React, { useState, useEffect, useRef } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 
 export const Experience = () => {
+    const titleRef = useRef(0);
+    const jobRef1 = useRef(0);
+    const jobRef2 = useRef(0);
+
+    const [loadTitle, setLoadTitle] = useState(false);
+    const [loadJob1, setLoadJob1] = useState(false);
+    const [loadJob2, setLoadJob2] = useState(false);
+
+    const handleScroll = () => {
+        const position = window.pageYOffset + 0.75 * window.innerHeight;
+
+        if (position >= titleRef.current.offsetTop) {
+            setLoadTitle(true);
+        }
+        if (position >= jobRef1.current.offsetTop) {
+            setLoadJob1(true);
+        }
+        if (position >= jobRef2.current.offsetTop) {
+            setLoadJob2(true);
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll, { passive: true });
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+
     return <>
         <Container fluid>
-            <Row className='display-6 text-center mt-5'>
+            <Row ref={titleRef} className={`${loadTitle ? 'notHidden' : 'hidden'} display-6 text-center mt-5`}>
                 <Col>
                     <span className='header hr2'>Experience</span>
                 </Col>
             </Row>
             <Row>
-                <Col xs={12} xl={6} className='mt-5'>
+                <Col ref={jobRef1} xs={12} xl={6} className={`${loadJob1 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-1'}`}>
                     <Card className='card-dimension h-100' border='light'>
                         <Card.Img src='/Ethos Group.png' className='card-image'/>
                         <Card.Header className='fs-2 pb-0 header'>
@@ -32,7 +64,7 @@ export const Experience = () => {
                     </Card>
                 </Col>
 
-                <Col xs={12} xl={6} className='mt-5'>
+                <Col ref={jobRef2} xs={12} xl={6} className={`${loadJob2 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-2'}`}>
                     <Card className='card-dimension h-100' border='light'>
                         <Card.Img src='/SMU.png' className='card-image'/>
                         <Card.Header className='fs-2 pb-0 header'>
