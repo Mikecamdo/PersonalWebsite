@@ -1,0 +1,21 @@
+.hidden {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition-property: opacity, transform;
+    transition-duration: 2s;
+}
+
+.notHidden {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition-property: opacity, transform;
+    transition-duration: 2s;
+}
+
+.delay-1 {
+    transition-delay: 0.25s;
+}
+
+.delay-2 {
+    transition-delay: 0.5s;
+}
