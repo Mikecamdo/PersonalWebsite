@@ -1,3 +1,4 @@
+import React, { useState, useEffect, useRef } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -5,16 +6,67 @@ import Card from 'react-bootstrap/Card';
 import '../css/button.css';
 
 export const Projects = () => {
+    const titleRef = useRef(0);
+    const projRef1 = useRef(0);
+    const projRef2 = useRef(0);
+    const projRef3 = useRef(0);
+    const projRef4 = useRef(0);
+    const projRef5 = useRef(0);
+    const projRef6 = useRef(0);
+
+    const [loadTitle, setLoadTitle] = useState(false);
+    const [loadProj1, setLoadProj1] = useState(false);
+    const [loadProj2, setLoadProj2] = useState(false);
+    const [loadProj3, setLoadProj3] = useState(false);
+    const [loadProj4, setLoadProj4] = useState(false);
+    const [loadProj5, setLoadProj5] = useState(false);
+    const [loadProj6, setLoadProj6] = useState(false);
+
+
+    const handleScroll = () => {
+        const position = window.pageYOffset + 0.75 * window.innerHeight;
+
+        if (position >= titleRef.current.offsetTop) {
+            setLoadTitle(true);
+        }
+        if (position >= projRef1.current.offsetTop) {
+            setLoadProj1(true);
+        }
+        if (position >= projRef2.current.offsetTop) {
+            setLoadProj2(true);
+        }
+        if (position >= projRef3.current.offsetTop) {
+            setLoadProj3(true);
+        }
+        if (position >= projRef4.current.offsetTop) {
+            setLoadProj4(true);
+        }
+        if (position >= projRef5.current.offsetTop) {
+            setLoadProj5(true);
+        }
+        if (position >= projRef6.current.offsetTop) {
+            setLoadProj6(true);
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll, { passive: true });
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return <>
         <Container fluid>
-            <Row className='display-6 text-center mt-5'>
+            <Row ref={titleRef} className={`${loadTitle ? 'notHidden' : 'hidden'} display-6 text-center mt-5`}>
                 <Col className='header'>
                     <span className='header hr2'>Projects</span>
                 </Col>
             </Row>
 
             <Row>
-                <Col xs={12} xl={6} className='mt-5'>
+                <Col ref={projRef1} xs={12} xl={6} className={`${loadProj1 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-1'}`}>
                     <Card className='card-dimension h-100' border='light'>
                         <Card.Header className='fs-2 pb-0 header'>
                             DoughBack
@@ -52,7 +104,7 @@ export const Projects = () => {
                     </Card>
                 </Col>
 
-                <Col xs={12} xl={6} className='mt-5'>
+                <Col ref={projRef2} xs={12} xl={6} className={`${loadProj2 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-2'}`}>
                     <Card className='card-dimension h-100' border='light'>
                         <Card.Header className='fs-2 pb-0 header'>
                             Search Engine
@@ -84,7 +136,7 @@ export const Projects = () => {
             </Row>
 
             <Row>
-                <Col xs={12} xl={6} className='mt-5'>
+                <Col ref={projRef3} xs={12} xl={6} className={`${loadProj3 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-1'}`}>
                     <Card className='card-dimension h-100' border='light'>
                         <Card.Header className='fs-2 pb-0 header'>
                             Sudoku Solver
@@ -113,7 +165,7 @@ export const Projects = () => {
                     </Card>
                 </Col>
 
-                <Col xs={12} xl={6} className='mt-5'>
+                <Col ref={projRef4} xs={12} xl={6} className={`${loadProj4 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-2'}`}>
                     <Card className='card-dimension h-100' border='light'>
                         <Card.Header className='fs-2 pb-0 header'>
                             Sentiment Analyzer
@@ -142,7 +194,7 @@ export const Projects = () => {
             </Row>
 
             <Row>
-                <Col xs={12} xl={6} className='mt-5'>
+                <Col ref={projRef5} xs={12} xl={6} className={`${loadProj5 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-1'}`}>
                     <Card className='card-dimension h-100' border='light'>
                         <Card.Header className='fs-2 pb-0 header'>
                             Word Sense Disambiguation
@@ -171,7 +223,7 @@ export const Projects = () => {
                     </Card>
                 </Col>
 
-                <Col xs={12} xl={6} className='mt-5'>
+                <Col ref={projRef6} xs={12} xl={6} className={`${loadProj6 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-2'}`}>
                     <Card className='card-dimension h-100' border='light'>
                         <Card.Header className='fs-2 pb-0 header'>
                             Community Detection
