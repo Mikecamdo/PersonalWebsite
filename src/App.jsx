@@ -70,12 +70,12 @@ export const App = () => {
                 <Navbar.Toggle className='transparent no-border ms-auto fs-3' onClick={() => {setNavClicked(!navClicked)}}/>
                 <Navbar.Collapse className='transparent fs-5'>
                     <Nav className='transparent flex-grow-1 justify-content-evenly'>
-                        <Nav.Link eventKey='1' className='mx-0 transparent' onClick={() => {setNavClicked(!navClicked); scrollTo(1)}}><span>Home</span></Nav.Link>
-                        <Nav.Link eventKey='2' className='mx-0 transparent' onClick={() => {setNavClicked(!navClicked); scrollTo(2)}}><span>About</span></Nav.Link>
-                        <Nav.Link eventKey='3' className='mx-0 transparent' onClick={() => {setNavClicked(!navClicked); scrollTo(3)}}><span>Experience</span></Nav.Link>
-                        <Nav.Link eventKey='4' className='mx-0 transparent' onClick={() => {setNavClicked(!navClicked); scrollTo(4)}}><span>Projects</span></Nav.Link>
-                        <Nav.Link eventKey='5' className='mx-0 transparent' onClick={() => {setNavClicked(!navClicked); scrollTo(5)}}><span>Contact</span></Nav.Link>
-                        <Nav.Link eventKey='6' className='mx-0 transparent' onClick={() => {setNavClicked(!navClicked); window.open(Resume)}}><span>Resume</span></Nav.Link>
+                        <Nav.Link eventKey='1' className='mx-0 transparent' onClick={() => {if (viewportWidth <= 991) {setNavClicked(!navClicked);} scrollTo(1)}}><span>Home</span></Nav.Link>
+                        <Nav.Link eventKey='2' className='mx-0 transparent' onClick={() => {if (viewportWidth <= 991) {setNavClicked(!navClicked);} scrollTo(2)}}><span>About</span></Nav.Link>
+                        <Nav.Link eventKey='3' className='mx-0 transparent' onClick={() => {if (viewportWidth <= 991) {setNavClicked(!navClicked);} scrollTo(3)}}><span>Experience</span></Nav.Link>
+                        <Nav.Link eventKey='4' className='mx-0 transparent' onClick={() => {if (viewportWidth <= 991) {setNavClicked(!navClicked);} scrollTo(4)}}><span>Projects</span></Nav.Link>
+                        <Nav.Link eventKey='5' className='mx-0 transparent' onClick={() => {if (viewportWidth <= 991) {setNavClicked(!navClicked);} scrollTo(5)}}><span>Contact</span></Nav.Link>
+                        <Nav.Link eventKey='6' className='mx-0 transparent' onClick={() => {if (viewportWidth <= 991) {setNavClicked(!navClicked);} window.open(Resume)}}><span>Resume</span></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
