@@ -66,7 +66,7 @@ export const Contact = () => {
             <Row ref={textRef} className={`${loadText ? 'notHidden' : 'hidden'} fs-4 text-center delay-1`}>
                 <Col>
                     I'm always interested in collaborating on a project or any job opportunities you may have. <br/>
-                    You can email me at <span className='header'>mcdoherty@smu.edu</span> or submit the form below.
+                    You can email me at <span className='header'>mcdoherty13@gmail.com</span> or submit the form below.
                 </Col>
             </Row>
 
