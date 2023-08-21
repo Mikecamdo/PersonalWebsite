@@ -34,7 +34,7 @@ export const About = () => {
         <Container fluid className='noOverflow'>
             <Row className='text-center'>
                 <Col ref={imageRef} xs={{ order: "last" }} lg={{ order: "first" }} className={`${loadImage ? "notHidden2" : "hidden2"}`}>
-                    <Image fluid src='CZ4A4017rt.jpg'></Image>
+                    <Image className='profile-picture' fluid src='CZ4A4017rt.jpg'></Image>
                 </Col>
 
                 <Col ref={textRef} xs={12} lg={6} className={`my-auto ${loadText ? "notHidden3" : "hidden3"}`}>

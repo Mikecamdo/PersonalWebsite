@@ -125,3 +125,7 @@ hr {
   background: transparent;
   z-index: 5;
 }
+
+.profile-picture {
+  max-height: 1000px;
+}
