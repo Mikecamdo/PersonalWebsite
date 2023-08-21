@@ -8,7 +8,7 @@ import { Contact } from './components/Contact';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Resume from './resume.pdf';
+import Resume from './Michael C Doherty Resume 2023.pdf';
 
 export const App = () => {
     const navbarRef = useRef(0);
