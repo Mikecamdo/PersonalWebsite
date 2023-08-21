@@ -66,6 +66,45 @@ export const Projects = () => {
             </Row>
 
             <Row>
+                <Col ref={projRef2} xs={12} lg={6} className={`${loadProj2 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-2'}`}>
+                    <Card className='card-dimension h-100' border='light'>
+                        <Card.Header className='fs-3 pb-0 header'>
+                            Laudatio
+                        </Card.Header>
+                        <Card.Body className='pt-0 fs-5'>
+                            <Card.Title>
+                                <i className='fs-5'>Angular, Bootstrap, ASP.NET Core, Entity Framework Core, MySQL</i>
+                            </Card.Title>
+                            <Card.Text className='align-items-center'>
+                                <ul>
+                                    <li>Developed a web app that allows users to recognize and praise their co-workers in a virtual work environment</li>
+                                    <li>Employed ASP.NET Core to serve a REST API and Angular to create a user-friendly UI</li>
+                                    <li>Utilized MVC architecture to create a maintainable and scalable codebase</li>
+                                    <li>Leveraged JSON Web Tokens for user authentication and Docker for deployment to the web</li>
+                                </ul>
+                                <Row>
+                                    <Col className='text-center mt-3' xs={12} sm={6}>
+                                        <button className='btn draw-border h-100' 
+                                                onClick={() => {
+                                                    window.open('https://github.com/Mikecamdo/Laudatio');
+                                                }}>
+                                                    View on GitHub
+                                        </button>
+                                    </Col>
+                                    <Col className='text-center mt-3' xs={12} sm={6}>
+                                        <button className='btn draw-border h-100'
+                                                onClick={() => {
+                                                    window.open('https://laudatio-production.up.railway.app/');
+                                                }}>
+                                                    View Website
+                                        </button>
+                                    </Col>
+                                </Row>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+
                 <Col ref={projRef1} xs={12} lg={6} className={`${loadProj1 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-1'}`}>
                     <Card className='card-dimension h-100' border='light'>
                         <Card.Header className='fs-3 pb-0 header'>
@@ -73,13 +112,14 @@ export const Projects = () => {
                         </Card.Header>
                         <Card.Body className='pt-0 fs-5'>
                             <Card.Title>
-                                <i className='fs-5'>HTML/CSS, React, Bootstrap/React Bootstrap, Express.js, Node.js, MySQL</i>
+                                <i className='fs-5'>React, Bootstrap/React Bootstrap, Express.js, Node.js, MySQL</i>
                             </Card.Title>
                             <Card.Text className='align-items-center'>
                                 <ul>
-                                    <li>A full stack application for companies to reimburse their employees</li>
-                                    <li>Developed by a team of 6 using Agile and Scrum techniques over 5 sprints</li>
-                                    <li>Features include account creation, login/logout, and submitting/editing/approving/denying reimbursement requests</li>
+                                    <li>Created a web app for companies to reimburse their employees for company expenses</li>
+                                    <li>Led a team of 6 using Agile and Scrum techniques over 5 sprints</li>
+                                    <li>Employed Node.js and Express.js to develop RESTful APIs with React as the frontend</li>
+                                    <li>Implemented core features including user registration, user authentication, and reimbursement management</li>
                                 </ul>
                                 <Row>
                                     <Col className='text-center mt-3' xs={12} sm={6}>
@@ -96,36 +136,6 @@ export const Projects = () => {
                                                     window.open('https://doughback.vercel.app/');
                                                 }}>
                                                     View Website
-                                        </button>
-                                    </Col>
-                                </Row>
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
-
-                <Col ref={projRef2} xs={12} lg={6} className={`${loadProj2 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-2'}`}>
-                    <Card className='card-dimension h-100' border='light'>
-                        <Card.Header className='fs-3 pb-0 header'>
-                            Search Engine
-                        </Card.Header>
-                        <Card.Body className='pt-0 fs-5'>
-                            <Card.Title>
-                                <i className='fs-5'>C++, RapidJSON</i>
-                            </Card.Title>
-                            <Card.Text className='align-items-center'>
-                                <ul>
-                                    <li>A search engine that accepts simple Boolean queries (e.g., AND social network / OR snap facebook)</li>
-                                    <li>Parses 300,000 JSON files and returns the most relevant articles for a given search</li>
-                                    <li>Includes the implementation of a custom AVL tree and hash table</li>
-                                </ul>
-                                <Row>
-                                    <Col className='text-center mt-3'>
-                                        <button className='btn draw-border'
-                                                onClick={() => {
-                                                    window.open('https://github.com/Mikecamdo/SearchEngine');
-                                                }}>
-                                                    View on GitHub
                                         </button>
                                     </Col>
                                 </Row>
@@ -197,24 +207,32 @@ export const Projects = () => {
                 <Col ref={projRef5} xs={12} lg={6} className={`${loadProj5 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-1'}`}>
                     <Card className='card-dimension h-100' border='light'>
                         <Card.Header className='fs-3 pb-0 header'>
-                            Word Sense Disambiguation
+                            Star Wars Crawl Generator
                         </Card.Header>
                         <Card.Body className='pt-0 fs-5'>
                             <Card.Title>
-                                <i className='fs-5'>Python, NLTK</i>
+                                <i className='fs-5'>Angular, Bootstrap</i>
                             </Card.Title>
                             <Card.Text className='align-items-center'>
                                 <ul>
-                                    <li>A program that determines the correct word sense of the words "Rubbish", "Yarn", and "Tissue"</li>
-                                    <li>Uses a dictionary/knowledge based method inspired by the Lesk algorithm</li>
+                                    <li>A website that allows users to create custom Star Wars Crawls</li>
+                                    <li>Includes templates for the Title Crawls of Episodes I-IX and full customization of the text and colors</li>
                                 </ul>
                                 <Row>
-                                    <Col className='text-center mt-3'>
-                                        <button className='btn draw-border'
+                                    <Col className='text-center mt-3' xs={12} sm={6}>
+                                        <button className='btn draw-border h-100' 
                                                 onClick={() => {
-                                                    window.open('https://github.com/Mikecamdo/WordSenseDisambiguation');
+                                                    window.open('https://github.com/Mikecamdo/StarWarsCrawlGenerator');
                                                 }}>
                                                     View on GitHub
+                                        </button>
+                                    </Col>
+                                    <Col className='text-center mt-3' xs={12} sm={6}>
+                                        <button className='btn draw-border h-100'
+                                                onClick={() => {
+                                                    window.open('https://star-wars-crawl-generator.vercel.app/');
+                                                }}>
+                                                    View Website
                                         </button>
                                     </Col>
                                 </Row>
