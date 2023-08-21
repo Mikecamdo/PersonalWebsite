@@ -54,9 +54,12 @@ export const Experience = () => {
                                 <i className='fs-5'>Ethos Group</i>
                             </Card.Title>
                             <Card.Text className='align-items-center'>
-                                June 2023 - August 2023 | Remote
+                                June 2023 - Present | Remote
                                 <ul>
-                                    <li>In Progress</li>
+                                    <li>Regularly implemented features in Angular and ASP.NET Core, utilizing CI/CD pipelines for integration</li>
+                                    <li>Participated in a daily standup as part of a Scrum/Agile environment with a team of 8 Software Engineers</li>
+                                    <li>Enhanced client's data analysis capabilities by implementing advanced features for video transcription analysis</li>
+                                    <li>Improved code quality through writing unit tests with xUnit and reviewing co-workers' pull requests</li>
                                 </ul>
                             </Card.Text>
                         </Card.Body>
@@ -76,7 +79,8 @@ export const Experience = () => {
                             <Card.Text className='align-items-center'>
                                 January 2022 - December 2022 | Dallas, TX
                                 <ul>
-                                    <li>Graded homeworks and tests for CS 2353 Discrete Computational Structures</li>
+                                    <li>Graded assignments for CS 2353 Discrete Computational Structures courses</li>
+                                    <li>Improved student learning outcomes by providing timely and valuable feedback</li>
                                 </ul>
                             </Card.Text>
                         </Card.Body>
