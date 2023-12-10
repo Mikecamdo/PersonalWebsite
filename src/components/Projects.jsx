@@ -241,7 +241,7 @@ export const Projects = () => {
                     </Card>
                 </Col>
 
-                <Col ref={projRef6} xs={12} lg={6} className={`${loadProj6 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-2'}`}>
+                {/* <Col ref={projRef6} xs={12} lg={6} className={`${loadProj6 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-2'}`}>
                     <Card className='card-dimension h-100' border='light'>
                         <Card.Header className='fs-3 pb-0 header'>
                             Community Detection
@@ -271,6 +271,33 @@ export const Projects = () => {
                                                 }}>
                                                     View Article
                                         </button>
+                                    </Col>
+                                </Row>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col> */}
+
+                <Col ref={projRef6} xs={12} lg={6} className={`${loadProj6 ? 'notHidden' : 'hidden'} mt-5 ${(window.innerWidth >= 1200) && 'delay-2'}`}>
+                    <Card className='card-dimension h-100' border='light'>
+                        <Card.Header className='fs-3 pb-0 header'>
+                            Computer Graphics
+                        </Card.Header>
+                        <Card.Body className='pt-0 fs-5'>
+                            <Card.Title>
+                                <i className='fs-5'>JavaScript, WebGL 2.0</i>
+                            </Card.Title>
+                            <Card.Text className='align-items-center'>
+                                <ul>
+                                    <li>Various programs developed while taking CS 5382 Computer Graphics at SMU</li>
+                                    <li>Projects explored various concepts, including WebGL basics, lighting, textures, and image processing</li>
+                                </ul>
+                                <Row>
+                                    <Col className='text-center mt-3'>
+                                        <button className='btn draw-border'
+                                                onClick={() => {
+                                                    window.open('https://mcdoherty.net/ComputerGraphics');
+                                                }}>View Assignments</button>
                                     </Col>
                                 </Row>
                             </Card.Text>
